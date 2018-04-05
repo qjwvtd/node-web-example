@@ -1,0 +1,58 @@
+/*按钮公共样式*/
+.btn-group{
+    /*按钮容器,按钮组*/
+    padding:0 20px;
+}
+.btn{
+    margin:5px 5px 5px 0;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    color:#fff;
+    border-radius:3px;
+    font-family: '黑体' !important;
+}
+.btn:hover{
+    opacity:0.8;
+}
+/*按钮大小*/
+.btn-lg{
+    /*大*/
+    padding:0 24px;
+    height:38px;
+    line-height:40px;
+}
+.btn-md{
+    /*中*/
+    padding:0 16px;
+    height:30px;
+    line-height:32px;
+}
+.btn-sm{
+    /*小*/
+    padding:0 10px;
+    height:24px;
+    line-height:26px;
+}
+.btn-xs{
+    /*迷你*/
+    padding:0 4px;
+    height:20px;
+    line-height:22px;
+}
+/*按钮颜色*/
+.btn-default{
+    background:rgb(153,153,153);/*灰*/
+}
+.btn-success{
+    background:green;/*绿*/
+}
+.btn-promise{
+    background:rgb(34,150,243);/*蓝*/
+}
+.btn-orange{
+    background:rgb(243,108,34);/*橙*/
+}
+.btn-warning{
+    background:indianred;/*浅红*/
+}

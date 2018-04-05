@@ -1,0 +1,109 @@
+.top {
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    background: #252525;
+    color: #fff;
+}
+
+.top .logo, .top .mainNav {
+    float: left
+}
+
+.top .other {
+    float: right
+}
+
+/*head-logo*/
+.top .logo a {
+    display: inline-block;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    margin: 12px 15px auto 15px;
+}
+
+.top .logo a img {
+    border: none;
+    width: auto;
+    height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/*head-导航*/
+.mainNav ul {
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 14px;
+}
+
+.mainNav ul li {
+    float: left;
+    padding: 0 15px;
+    margin: 0 5px;
+}
+.mainNav ul li a{
+    color:#fff;
+}
+.mainNav ul li:hover,.mainNav ul li.active {
+    background: #288EEF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*head-other*/
+.other {
+    overflow: hidden;
+}
+
+.other span {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 14px;
+}
+
+.other span:first-child {
+    display: inline-block;
+    text-indent: 40px;
+    background: url("../images/Head.png") no-repeat;
+}
+
+.other span:last-child a {
+    display: inline-block;
+    width: 32px;
+    height: 100%;
+    background: url("../images/more.png") no-repeat 0 4px;
+}
+
+.other span b {
+    color: #288EEF;
+    padding: 0 5px;
+}
+
+/*content*/
+#content {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#content .left, #content .right {
+    float: left;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#content .left {
+    width: 280px;
+}
+
+#content .right {
+    width: calc(100% - 280px);
+    border: 10px solid #ECECEC;
+}

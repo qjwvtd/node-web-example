@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旸谷技术-芜湖单轨建造平台</title>
+    <link rel="icon" type="images/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="row" id="header"></div>
+    <div class="row" id="content">
+        <div class="left">
+            <div class="btn-group text-center">
+                <button type="button" class="btn btn-md btn-promise navItem">菜单</button>
+                <button type="button" class="btn btn-md btn-promise navItem">构件</button>
+            </div>
+            <div id="tree" class="navContent">
+                this is tree!
+            </div>
+            <div id="nav" class="navContent"></div>
+        </div>
+        <div class="right">
+            <button type="button" id="getAllUser" class="btn btn-md btn-promise">ajax get</button>
+            <div id="showAllUser"></div>
+            <button type="button" id="getAllUser1" class="btn btn-md btn-promise">ajaxGet get</button>
+            <div id="showAllUser1"></div>
+            <div>
+                <span style="display:inline-block;width:100px;text-align:right">pageNum：</span><input type="text" id="user">
+            </div>
+            <div>
+                <span style="display:inline-block;width:100px;text-align:right">pageSize：</span><input type="text" id="password">
+            </div>
+            <button type="button" id="submitUser" class="btn btn-md btn-promise">submit</button>
+            <div id="showSubmitInfo"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="dist/index.js"></script>
+</body>
+</html>

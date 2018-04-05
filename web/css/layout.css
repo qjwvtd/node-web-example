@@ -1,0 +1,92 @@
+*{margin:0;padding:0;font-size:14px;font-family:'微软雅黑',Arial serif;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+html,body{overflow-x:auto;}
+a{outline:none;text-decoration:none;cursor:pointer}
+ul{list-style:none;padding:0;margin:0;}
+/*浮动*/
+.fl{float:left}
+.fr{float:right}
+.clear{overflow:hidden}
+/*文字*/
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+/*边框*/
+.border-left,.border-right,.border-top,.border-bottom,.border-top-right,.border-bottom-right{border:solid #212326;}
+.border-left{border-width:0 0 0 5px;}
+.border-right{border-width:0 5px 0 0;}
+.border-top{border-width:5px 0 0 0;}
+.border-bottom{border-width:0 0 5px 0;}
+.border-top-right{border-width:5px 5px 0 0;}
+.border-bottom-right{border-width:0 5px 5px 0;}
+/*仿bootstrap布局*/
+.container{display:block;}
+.row{overflow:hidden;display:block;}
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    display:block;float:left;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+}
+.col-md-1{width:8.3333%;}
+.col-md-2{width:16.6666%;}
+.col-md-3{width:24.9999%;}
+.col-md-4{width:33.3332%;}
+.col-md-5{width:41.6665%;}
+.col-md-6{width:49.9998%;}
+.col-md-7{width:58.3331%;}
+.col-md-8{width:66.6664%;}
+.col-md-9{width:74.9997%;}
+.col-md-10{width:83.333%;}
+.col-md-11{width:91.6663%;}
+.col-md-12{width:100%;}
+
+/*滚动条*/
+/*IE*/
+body{
+    scrollbar-arrow-color:#212326;/*三角箭头的颜色*/
+    scrollbar-face-color:#212326;/*滚动条滑块按钮的颜色*/
+    scrollbar-highlight-color:#212326;/*滚动条整体颜色*/
+    scrollbar-shadow-color:#212326;/*滚动条阴影*/
+}
+/*-webkit-*/
+::-webkit-scrollbar{
+    width:5px;/*滚动条垂直方向的宽度*/
+}
+::-webkit-scrollbar-thumb:vertical{
+    background:#212326;/* 垂直滚动条的滑动块 */
+}
+/*分页*/
+.paging{
+    height:30px;
+    line-height:30px;
+    padding-right:20px;
+}
+.paging span{
+    display:inline-block;
+    width:13px;
+    height:12px;
+    margin:0 4px;
+    cursor:pointer;
+}
+/*宽度百分比*/
+.w5{width:5%}
+.w10{width:10%}
+.w15{width:15%}
+.w20{width:20%}
+.w25{width:25%}
+.w30{width:30%}
+.w35{width:35%}
+.w40{width:40%}
+.w45{width:45%}
+.w50{width:50%}
+.w55{width:55%}
+/*表*/
+.table{overflow:hidden;padding:15px}
+.tBody{width:100%;overflow:hidden;}
+.tBody>ul{width:calc(100% + 17px);padding-right:17px;height:100%;overflow-y:auto}
+.tHead,.tBody li{overflow:hidden;line-height:40px;border-bottom:1px solid #DDDDDD}
+.tHead span{font-weight:bold;}
+.tBody li:nth-child(even){background:#DDDDDD}
+.tHead span,.tBody li span{display:inline-block;float:left;text-align:center}
+.tBody li span{color:#333}
+.tBody li span i{display:block;width:40px;height:15px;border-radius:8px;margin:13px auto;cursor:pointer}
+.tBody li span i.success{background:#42df4e}
+.tBody li span i.error{background:#ff8e05}
+/*表树*/
