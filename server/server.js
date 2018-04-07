@@ -26,6 +26,10 @@ app.use(express.static(path.join(root)));
 var router = require('./routes/router');
 router(app);
 
+//404 处理的引入要放在最后面
+var Error = require('./404');
+Error(app);
+
 //开启服务
 app.listen(port,function(){
     console.log('Server listening on port:',port);

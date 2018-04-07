@@ -96,13 +96,26 @@ document.getElementById('submitUser').onclick = function(){
     });
 };
 document.getElementById('getImgFile').onclick = function(){
-    getJson('/getImgFile',data => {
-        //document.getElementById('showImgFile').innerText  = JSON.stringify(data);
-    });
+    var req = null;
+    if (XMLHttpRequest) {
+        req = new XMLHttpRequest();
+    } else {
+        req = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    req.open('GET', '/getImgFile', true);
+    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
+    req.send(null);
+    req.onreadystatechange = function () {
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                document.getElementById('showImgFile').innerHTML  = req.responseText;
+            }
+        }
+    };
 };
 document.getElementById('getJsonFile').onclick = function(){
     getJson('/getJsonFile',data => {
-        //document.getElementById('showJsonFile').innerText  = JSON.stringify(data);
+        document.getElementById('showJsonFile').innerText  = JSON.stringify(data);
     });
 };
 

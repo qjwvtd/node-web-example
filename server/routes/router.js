@@ -8,11 +8,8 @@ module.exports = function(app){
     var user = require('./../api/user');
     user(app);
 
-    //404 处理
-    var Error = require('./../404');
-    Error(app);
-
     //读取文件
-    var file = require('./../api/getFileTest');
-    file(app);
+    var readFileTest = require('./../api/getFileTest');
+    readFileTest(app);
+
 };
