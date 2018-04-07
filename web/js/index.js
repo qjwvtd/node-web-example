@@ -6,7 +6,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import {getJson,post,Session} from './common';
-import './../css/index.css';
 
 
 //init user
@@ -81,12 +80,12 @@ document.getElementById('getAllUser').onclick = function(){
     getJson('/getUserInfo',data => {
         document.getElementById('showAllUser').innerText  = JSON.stringify(data);
     });
-}
+};
 document.getElementById('getAllUser1').onclick = function(){
     getJson('/getHttpResultApiData',data => {
         document.getElementById('showAllUser1').innerText  = JSON.stringify(data);
     });
-}
+};
 document.getElementById('submitUser').onclick = function(){
     var _num = document.getElementById('user').value;
     var _size = document.getElementById('password').value;
@@ -95,5 +94,15 @@ document.getElementById('submitUser').onclick = function(){
     post('/postHttpResultApiData',_data,data => {
         document.getElementById('showSubmitInfo').innerText  = JSON.stringify(data);
     });
-}
+};
+document.getElementById('getImgFile').onclick = function(){
+    getJson('/getImgFile',data => {
+        //document.getElementById('showImgFile').innerText  = JSON.stringify(data);
+    });
+};
+document.getElementById('getJsonFile').onclick = function(){
+    getJson('/getJsonFile',data => {
+        //document.getElementById('showJsonFile').innerText  = JSON.stringify(data);
+    });
+};
 

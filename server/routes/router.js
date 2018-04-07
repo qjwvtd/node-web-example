@@ -12,4 +12,7 @@ module.exports = function(app){
     var Error = require('./../404');
     Error(app);
 
+    //读取文件
+    var file = require('./../api/getFileTest');
+    file(app);
 };
